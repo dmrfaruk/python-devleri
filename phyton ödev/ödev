@@ -1,0 +1,43 @@
+#ad,soyad,şehir
+kullanıcı_ismi=input("isminizi giriniz").title().strip()
+kullanıcı_soyadı=input("soyadınızı giriniz").title().strip()
+kullanıcı_şehir=input("yaşadığınız şehri giriniz").title().strip()
+print(kullanıcı_ismi,kullanıcı_soyadı,kullanıcı_şehir, "şehrinde yaşamaktadır")  
+
+
+#fiyat,indirim yüzdesi
+x=int(input("fiyatı giriniz"))
+y=int(input("indirim yüzdesini giriniz"))
+indirim_tutar=(x*y)/100
+son_fiyat=x-indirim_tutar
+print("indirim tutarı",indirim_tutar,"TL'dir.","Son fiyat",son_fiyat,"tl'dir")
+
+#ehliyet
+doğum_yılı=int(input("doğum yılınızı giriniz"))
+yaş=2026-doğum_yılı
+print("yaşınız:",yaş,sep="")
+if yaş>=18:
+    print("Ehliyet alınabilir.")
+else:          
+    print("Ehliyet alınamaz")
+
+#vize,final
+vize_notu=int(input("vize notunuzu giriniz"))
+final_notu=int(input("final notunuzu giriniz"))
+ortalama=(vize_notu*0.40)+(final_notu*0.60)
+if 100>=ortalama>=90:
+    print("AA")
+elif 89>=ortalama>=85:
+    print("BA")
+elif 84>=ortalama>=75:
+    print("BB")
+elif 74>=ortalama>=70:
+    print("CB")    
+elif 69>=ortalama>=60:
+    print("CC")
+elif 59>=ortalama>=50:
+    print("DC")
+elif 49>=ortalama>=40:
+    print("DD")
+else:
+    print("FF")
