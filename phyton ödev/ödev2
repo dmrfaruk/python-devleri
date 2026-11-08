@@ -1,0 +1,6 @@
+sayı=int(input("ateşeleme süresi giriniz "))
+while sayı>0:
+    sayı=sayı-1
+    print(sayı)
+
+print("ateşle")
